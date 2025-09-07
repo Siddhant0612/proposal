@@ -1,0 +1,80 @@
+  body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #ffe6f0, #ffd6eb);
+    font-family: Arial, sans-serif;
+}
+h1 {
+    margin-bottom: 40px; /* Space below the heading */
+    color: #d63384; /* Pinkish text color */
+  }
+
+
+  button {
+    padding: 12px 24px; /* Inner spacing (top/bottom 12px, left/right 24px) */
+    font-size: 18px; /* Text size */
+    margin: 10px; /* Space outside the button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Change mouse to pointer on hover */
+  }
+  
+  /* --- Yes Button Styling --- */
+  #yes {
+    background: #ff4da6; /* Pink background color */
+    color: white; /* White text */
+  }
+  
+  /* --- No Button Styling --- */
+  #no {
+    background: #f44336; /* Red background color */
+    color: white; /* White text */
+    position: absolute;
+  }
+
+  .cloud {
+    position: absolute; /* Place clouds freely on the page */
+    background: white; /* Cloud color */
+    border-radius: 50%; /* Makes them round like blobs */
+    opacity: 0.9; /* Slightly transparent */
+  }
+  
+  /* Small cloud: size and position */
+  .cloud.small { 
+    width: 60px; /* Width of cloud */
+    height: 60px; /* Height of cloud */
+    top: 10%; /* Position from top of page */
+    left: 15%; /* Position from left of page */
+  }
+  
+  /* Medium cloud */
+  .cloud.medium { 
+    width: 100px; 
+    height: 100px; 
+    top: 20%; 
+    right: 20%; /* This one is on the right side */
+  }
+  
+  /* Large cloud */
+  .cloud.large { 
+    width: 140px; 
+    height: 140px; 
+    bottom: 15%; /* Positioned from bottom */
+    left: 25%; 
+  }
+  
+  /* --- Rainbow Styling --- */
+  .rainbow {
+    position: absolute; /* So we can place it anywhere */
+    top: 30%; /* Distance from top */
+    left: 10%; /* Distance from left */
+    width: 120px; /* Width of rainbow */
+    height: 60px; /* Height of rainbow (half-circle) */
+    border-radius: 60px 60px 0 0; /* Rounded top edges -> rainbow arc */
+    background: linear-gradient(to right, 
+      red, orange, yellow, green, blue, indigo, violet); /* Rainbow colors */
+  }
